@@ -36,5 +36,8 @@
     "tinkerdesk-plugin",
     "tts",
     "voice"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
