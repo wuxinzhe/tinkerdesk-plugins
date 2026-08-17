@@ -31,5 +31,3 @@ npm install tinkerdesk-plugin-speech-index-tts
 ## 本地安装（旧方式）
 
 手动下载插件包 → 插件设置「安装插件」→ 选 `.zip` / 文件夹 → 安装。
-
-> README 在线安装说明（含 npm 市场）。

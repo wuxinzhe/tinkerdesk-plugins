@@ -30,5 +30,3 @@ npm install tinkerdesk-plugin-speech-omni-voice
 ## 本地安装（旧方式）
 
 手动下载插件包 → 插件设置「安装插件」→ 选文件夹 / `.zip` → 安装。
-
-> README 在线安装说明。
