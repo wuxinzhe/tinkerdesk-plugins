@@ -6,11 +6,10 @@ TinkerDesk 插件 monorepo —— **单仓库维护所有插件包**。每个插
 
 ```
 packages/
-├── index-tts2          → tinkerdesk-plugin-index-tts2
+├── index-tts2          → tinkerdesk-plugin-speech-index-tts
 ├── speech-omni-voice   → tinkerdesk-plugin-speech-omni-voice
 ├── speech-sherpa       → tinkerdesk-plugin-speech-sherpa
-├── stt-whisper         → tinkerdesk-plugin-stt-whisper
-└── vision-analyze      → tinkerdesk-plugin-vision-analyze
+└── stt-whisper         → tinkerdesk-plugin-stt-whisper
 ```
 
 ## 新增插件
