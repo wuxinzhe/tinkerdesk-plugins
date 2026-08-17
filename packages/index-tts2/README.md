@@ -43,3 +43,5 @@ scripts/gen_index.py  合成脚本（IndexTTS-2.5 infer——BF16）
 - 模型加载每次合成都需要（无常驻——首次 ~10-30s，之后看系统缓存）
 - 显存：IndexTTS-2.5 BF16 加载约 5-8GB——与 Ollama 本地模型同时跑需要让位
 - 输出 22.05kHz wav
+
+> by tinkerdesk-plugins CI 自动发布。
