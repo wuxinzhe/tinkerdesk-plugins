@@ -1,0 +1,84 @@
+{
+  "id": "stt-whisper",
+  "name": "语音识别（Whisper）",
+  "version": "0.1.5",
+  "apiVersion": 1,
+  "entry": "dist/index.js",
+  "capabilities": [
+    "stt"
+  ],
+  "systemInterfaces": [
+    {
+      "id": "voice.stt"
+    }
+  ],
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "modelSize": {
+        "type": "select",
+        "title": "模型大小",
+        "options": [
+          {
+            "label": "small（466MB——快）",
+            "value": "small"
+          },
+          {
+            "label": "medium（1.5GB——准）",
+            "value": "medium"
+          }
+        ],
+        "default": "small",
+        "description": "whisper.cpp ggml 模型——medium 更准但更慢/更大"
+      },
+      "language": {
+        "type": "select",
+        "title": "语言",
+        "options": [
+          {
+            "label": "自动检测",
+            "value": "auto"
+          },
+          {
+            "label": "中文",
+            "value": "zh"
+          },
+          {
+            "label": "English",
+            "value": "en"
+          },
+          {
+            "label": "日本語",
+            "value": "ja"
+          }
+        ],
+        "default": "auto",
+        "description": "识别语言——auto 自动检测（多语言模型）"
+      }
+    }
+  },
+  "assetDeps": [
+    {
+      "name": "whisper-cli 引擎（Windows prebuilt）",
+      "dest": "bin",
+      "sizeMB": 8,
+      "url": "https://github.com/ggerganov/whisper.cpp/releases/download/v1.9.2/whisper-bin-x64.zip",
+      "optional": false
+    },
+    {
+      "name": "模型 small（ggml-small.bin 多语言）",
+      "dest": "models",
+      "sizeMB": 466,
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.bin",
+      "optional": true
+    },
+    {
+      "name": "模型 medium（ggml-medium.bin 多语言）",
+      "dest": "models",
+      "sizeMB": 1530,
+      "url": "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.bin",
+      "optional": true
+    }
+  ],
+  "description": "语音识别（STT）——whisper.cpp 本地引擎（离线/多语言）"
+}

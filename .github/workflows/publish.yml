@@ -1,0 +1,48 @@
+name: Publish Plugins
+
+# 单仓库 monorepo：检测 packages/* 任一插件变更 → 自动发布该 npm 包
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'packages/*/**'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: 'https://registry.npmjs.org/'
+
+      - name: Detect changed packages
+        id: changed
+        run: |
+          PREV="${{ github.event.before }}"
+          if [ "$PREV" = "0000000000000000000000000000000000000000" ]; then
+            # 首次推送——发布全部插件包
+            ls packages | sort -u | tee /tmp/changed.txt
+          else
+            git diff --name-only "$PREV" HEAD -- 'packages/*/**' \
+              | cut -d/ -f2 | sort -u | tee /tmp/changed.txt
+          fi
+
+      - name: Publish changed packages
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          if [ ! -s /tmp/changed.txt ]; then
+            echo "✅ 没有插件包变更"
+            exit 0
+          fi
+          while read -r pkg; do
+            [ -z "$pkg" ] && continue
+            echo "📦 发布 $pkg ..."
+            (cd "packages/$pkg" && npm version patch --no-git-tag-version && npm publish)
+            echo "✅ $pkg 已发布"
+          done < /tmp/changed.txt

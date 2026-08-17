@@ -1,0 +1,23 @@
+{
+  "name": "tinkerdesk-plugin-speech-omni-voice",
+  "version": "0.1.3",
+  "description": "TinkerDesk 插件：OmniVoice 声音克隆 TTS（仿声朗读）",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "manifest.json",
+    "core/",
+    "scripts/",
+    "guide.md",
+    "README.md",
+    "lib/"
+  ],
+  "scripts": {
+    "verify": "node scripts/verify.js"
+  },
+  "keywords": [
+    "tinkerdesk-plugin",
+    "tts",
+    "voice"
+  ]
+}
