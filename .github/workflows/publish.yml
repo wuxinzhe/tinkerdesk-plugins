@@ -42,6 +42,8 @@ jobs:
           fi
           while read -r pkg; do
             [ -z "$pkg" ] && continue
+            # 跳过无 package.json 的目录（如占位/待补源码包）
+            [ -f "packages/$pkg/package.json" ] || { echo "⏭️  $pkg 无 package.json——跳过"; continue; }
             echo "📦 发布 $pkg ..."
             (cd "packages/$pkg" && npm version patch --no-git-tag-version && npm publish)
             echo "✅ $pkg 已发布"
