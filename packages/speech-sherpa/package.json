@@ -1,5 +1,5 @@
 {
-  "name": "tinkerdesk-plugin-speech-sherpa",
+  "name": "tinkerdesk-provider-speech-sherpa",
   "version": "0.1.2",
   "description": "TinkerDesk 插件：本地离线语音 STT + TTS（Sherpa-ONNX）",
   "main": "index.js",
@@ -33,7 +33,7 @@
   ],
   "keywords": [
     "stt",
-    "tinkerdesk-plugin",
+    "tinkerdesk-provider",
     "tts",
     "voice"
   ],

@@ -1,8 +1,8 @@
-# tinkerdesk-plugin-speech-sherpa
+# tinkerdesk-provider-speech-sherpa
 
 TinkerDesk 插件：本地离线语音（STT 语音输入 + TTS 朗读），基于 [Sherpa-ONNX](https://github.com/k2-fsa/sherpa-onnx)。
 
-> npm 包：`tinkerdesk-plugin-speech-sherpa`
+> npm 包：`tinkerdesk-provider-speech-sherpa`
 
 ## 在线安装（推荐）
 
@@ -15,7 +15,7 @@ TinkerDesk 现已支持**插件市场在线安装**：
 或在命令行：
 
 ```bash
-npm install tinkerdesk-plugin-speech-sherpa
+npm install tinkerdesk-provider-speech-sherpa
 ```
 
 ## 特点

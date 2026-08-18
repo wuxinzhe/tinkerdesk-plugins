@@ -1,5 +1,5 @@
 /**
- * index.js — tinkerdesk-plugin-index-tts2 入口（CommonJS）
+ * index.js — tinkerdesk-provider-index-tts2 入口（CommonJS）
  *
  * 能力：voice.tts / tool.tts（用 IndexTTS-2.5 克隆你的声音朗读——中/英/日/西/阿）。
  * 注意：IndexTTS 是纯 TTS（声音克隆），无 STT——STT 请使用 speech-sherpa 插件。

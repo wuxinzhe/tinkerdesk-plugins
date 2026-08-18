@@ -1,4 +1,4 @@
-# tinkerdesk-plugins
+# tinkerdesk-providers
 
 TinkerDesk 插件 monorepo —— **单仓库维护所有插件包**。每个插件独立 npm 包（保留独立发布端），CI 自动发布。
 
@@ -6,10 +6,10 @@ TinkerDesk 插件 monorepo —— **单仓库维护所有插件包**。每个插
 
 ```
 packages/
-├── index-tts2          → tinkerdesk-plugin-speech-index-tts
-├── speech-omni-voice   → tinkerdesk-plugin-speech-omni-voice
-├── speech-sherpa       → tinkerdesk-plugin-speech-sherpa
-└── stt-whisper         → tinkerdesk-plugin-stt-whisper
+├── index-tts2          → tinkerdesk-provider-speech-index-tts
+├── speech-omni-voice   → tinkerdesk-provider-speech-omni-voice
+├── speech-sherpa       → tinkerdesk-provider-speech-sherpa
+└── stt-whisper         → tinkerdesk-provider-stt-whisper
 ```
 
 ## 新增插件
@@ -26,5 +26,5 @@ mkdir packages/<name>
 
 ## 规范
 
-- 包名 `tinkerdesk-plugin-<name>`
+- 包名 `tinkerdesk-provider-<name>`
 - 每个包独立 `package.json`（含脚本/依赖）+ 插件 manifest

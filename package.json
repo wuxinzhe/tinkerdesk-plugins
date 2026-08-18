@@ -1,5 +1,5 @@
 {
-  "name": "tinkerdesk-plugins",
+  "name": "tinkerdesk-providers",
   "version": "1.0.0",
   "description": "TinkerDesk plugins monorepo —— 单仓库收录所有插件包。每个插件是独立 npm 包，通过 CI 自动发布。",
   "private": true,

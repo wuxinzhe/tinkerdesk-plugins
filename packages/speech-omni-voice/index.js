@@ -1,5 +1,5 @@
 /**
- * index.js — tinkerdesk-plugin-speech-omni-voice 入口（CommonJS）
+ * index.js — tinkerdesk-provider-speech-omni-voice 入口（CommonJS）
  *
  * 能力：voice.tts（用 OmniVoice 克隆你的声音朗读）。
  * 注意：OmniVoice 是纯 TTS（声音克隆），无 STT——STT 请使用 speech-sherpa 插件，

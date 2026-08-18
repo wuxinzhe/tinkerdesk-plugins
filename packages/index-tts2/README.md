@@ -1,8 +1,8 @@
-# tinkerdesk-plugin-speech-index-tts
+# tinkerdesk-provider-speech-index-tts
 
 TinkerDesk 插件：**语音克隆（IndexTTS-2.5）**——零样本声音克隆 TTS。
 
-> npm 包：`tinkerdesk-plugin-speech-index-tts`
+> npm 包：`tinkerdesk-provider-speech-index-tts`
 
 ## 在线安装（推荐）
 
@@ -15,7 +15,7 @@ TinkerDesk 现已支持**插件市场在线安装**：
 或在命令行：
 
 ```bash
-npm install tinkerdesk-plugin-speech-index-tts
+npm install tinkerdesk-provider-speech-index-tts
 ```
 
 ## 能力

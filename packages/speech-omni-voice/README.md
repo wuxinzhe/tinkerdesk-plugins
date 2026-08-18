@@ -1,8 +1,8 @@
-# tinkerdesk-plugin-speech-omni-voice
+# tinkerdesk-provider-speech-omni-voice
 
 TinkerDesk 插件：用你自己的声音朗读（零样本声音克隆 TTS，[OmniVoice](https://github.com/k2-fsa/OmniVoice) 引擎）。
 
-> npm 包：`tinkerdesk-plugin-speech-omni-voice`
+> npm 包：`tinkerdesk-provider-speech-omni-voice`
 
 ## 在线安装（推荐）
 
@@ -15,13 +15,13 @@ TinkerDesk 现已支持**插件市场在线安装**：
 或在命令行：
 
 ```bash
-npm install tinkerdesk-plugin-speech-omni-voice
+npm install tinkerdesk-provider-speech-omni-voice
 ```
 
 ## 能力
 
 - `voice.tts`（仿声朗读）——配置一段参考音频，朗读文本时用参考音频的声音合成
-- **注意**：OmniVoice 是**纯 TTS（声音克隆）**，没有语音识别（STT）能力——语音输入请用 `tinkerdesk-plugin-speech-sherpa`。语音设置里可为 **STT / TTS 分别选择不同插件**。
+- **注意**：OmniVoice 是**纯 TTS（声音克隆）**，没有语音识别（STT）能力——语音输入请用 `tinkerdesk-provider-speech-sherpa`。语音设置里可为 **STT / TTS 分别选择不同插件**。
 
 ## 使用
 

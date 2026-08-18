@@ -1,8 +1,8 @@
-# tinkerdesk-plugin-stt-whisper
+# tinkerdesk-provider-stt-whisper
 
 语音识别（STT）插件——**whisper.cpp 本地引擎**（离线/多语言）。
 
-> npm 包：`tinkerdesk-plugin-stt-whisper`
+> npm 包：`tinkerdesk-provider-stt-whisper`
 
 ## 在线安装（推荐）
 
@@ -15,7 +15,7 @@ TinkerDesk 现已支持**插件市场在线安装**：
 或在命令行：
 
 ```bash
-npm install tinkerdesk-plugin-stt-whisper
+npm install tinkerdesk-provider-stt-whisper
 ```
 
 ## 能力
